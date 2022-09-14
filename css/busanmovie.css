@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
-html {font-family: 'Gothic A1', sans-serif;}
-
+@font-face {
+    font-family: 'GothicA1-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
 
 * { margin: 0;
     padding: 0;
@@ -17,7 +21,6 @@ li {
 }
 
 header {
-    font-weight: 400;
     width: 100%;
     color: white;
     /* 배경 위로 헤더 올리고 싶니?
@@ -144,7 +147,7 @@ header nav ul li:nth-of-type(4) {
 
 
 /* 검색창 */
-.cont03 { font-weight: 400;  margin-bottom: 100px; margin-top: 100px; }
+.cont03 {  margin-bottom: 100px; margin-top: 100px; }
 .icon {
    
     height: 379px;
@@ -221,34 +224,32 @@ margin-right: 23px;
 
 .cont04 {  margin-bottom: 200px; margin-top: 100px; /* background-color: #00aeef; */ }
 
-.cont04 h3 { font-weight: 700; text-align: center; font-size: 30px;
+.cont04 h3 { text-align: center; font-size: 30px;
             margin-bottom: 43px;}
 
-.cont04 .cont04_all {  height: 100%; width: 100%; text-align: center; }
+.cont04 .cont04_all {height: 100%; width: 100%; text-align: center; }
 
 .cont04 .cont04_all .text04 { width: 100%; margin: 0 auto; }
-.cont04 .cont04_all .text04 .ul_01 { font-weight: 500; margin-bottom: 43px;  font-size: 25px;}
+.cont04 .cont04_all .text04 .ul_01 { width: 150px;  padding-bottom: 43px; margin: 0 auto; font-size: 25px; display: flex; } 
+.cont04 .cont04_all .text04 .ul_01 li { padding-right: 25px;}
+.cont04 .cont04_all .text04 .ul_01 a:nth-of-type(2) li { color: #00aeef;}
+.cont04 .cont04_all .text04 .ul_01 a:nth-of-type(1) li { font-size: 22px; color: rgba(0, 0, 0, 0.473); }
+.cont04 .cont04_all .text04 .ul_01 a:nth-of-type(3) li { font-size: 22px; color: rgba(0, 0, 0, 0.473); }
 
-
-.cont04 .cont04_all .text04 .list04 { font-weight: 500; display: flex; justify-content: center; }
+.cont04 .cont04_all .text04 .list04 { display: flex; justify-content: center; }
 .cont04 .cont04_all .text04 .list04 li {margin: 0 20px;}
 .cont04 .cont04_all .list_post { display: flex; margin-top: 46px; width: 1440px; margin: 46px auto;}
 
-.cont04 .cont04_all .list_post div {  margin: 0 auto;  }
-.cont04 .cont04_all .list_post div>a { font-weight: 600; font-size: 18px;}
+.cont04 .cont04_all .list_post div {margin: 0 auto;  }
+.cont04 .cont04_all .list_post div a {font-size: 18px;}
 .cont04 .cont04_all .list_post div p {margin: 15px 0; font-size: 20px;}
-.cont04 .cont04_all .list_post div ul { font-weight: 300; display: flex; }
+.cont04 .cont04_all .list_post div ul { display: flex; }
 .cont04 .cont04_all .list_post div ul li {width: 100%; margin: 10px; padding:10px 5px; font-size: 17px; }
 .cont04 .cont04_all .list_post div ul li:nth-child(1) {
     background-color: rgb(255, 222, 38);
     border-radius: 10px;
 }
 
-.cont04 .cont04_all .list_post div ul li:nth-child(1):hover {
-    background-color: rgb(231, 170, 0);
-    color: white;
-    
-}
 
 .cont04 .cont04_all .list_post div ul li:nth-child(2) {
 background-color: rgb(255, 255, 255);
@@ -267,7 +268,7 @@ border-radius: 10px;
 
 /* 전시&공연 */
 
- .cont05 { 
+ .cont05 {
     margin-bottom: 200px; margin-top: 200px;
     text-align: center;
     font-size: 30px;
@@ -275,7 +276,7 @@ border-radius: 10px;
     margin-bottom: 78px; */
 }
 
-.cont05 h3 {font-weight: 700;
+.cont05 h3 {
     margin-bottom: 40px; }
 
     html,
@@ -326,13 +327,13 @@ border-radius: 10px;
 /* 행사 */
 
 .cont06 {  width: 1000px; margin: 0 auto; padding-top: 200px; padding-bottom: 200px;}
-.cont06 h3 { font-weight: 700; margin-bottom: 40px; font-size: 30px; text-align: center; }
+.cont06 h3 { margin-bottom: 40px; font-size: 30px; text-align: center; }
 .cont06 .cont06_all { width: 100%; display: flex;}
 .cont06 .cont06_all .cont06_1 {width: 268px; height: 521px;  position: relative;}
 .cont06 .cont06_all .cont06_1 div { position: absolute; text-align: right; bottom: 20px; right: 10px;}
 
-.cont06 .cont06_all .cont06_1 div a strong { font-weight: 600; color: #ffd86e; }
-.cont06 .cont06_all .cont06_1 div a p { font-weight: 300; color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
+.cont06 .cont06_all .cont06_1 div a strong { color: #ffd86e; }
+.cont06 .cont06_all .cont06_1 div a p { color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
 
 /* 오른쪽 3개 전체 */
 
@@ -341,29 +342,29 @@ border-radius: 10px;
 
 
 /*  위 2개 */
-.cont06 .cont06_all .cont06_2 .cont06_02 { display: flex; margin: 0 25px;}
-.cont06 .cont06_all .cont06_2 .cont06_02 div {  text-align: right;}
-.cont06 .cont06_all .cont06_2  .cont06_02  p { font-weight: 400; color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
+.cont06 .cont06_all .cont06_2 .cont06_02 {display: flex; margin: 0 25px;}
+.cont06 .cont06_all .cont06_2 .cont06_02 div { text-align: right;}
+.cont06 .cont06_all .cont06_2  .cont06_02  p {color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
 
 .cont06 .cont06_all .cont06_2 .cont06_02 .p01  { width: 342px; height: 245px; position: relative;}
 .cont06 .cont06_all .cont06_2 .cont06_02 .p01 div { width: 100%; position: absolute; bottom: 20px; right: 10px;}
-.cont06 .cont06_all .cont06_2 .cont06_02 .p01 div a strong { font-weight: 600; color: #ef0070 }
+.cont06 .cont06_all .cont06_2 .cont06_02 .p01 div a strong { color: #ef0070 }
 
 .cont06 .cont06_all .cont06_2 .cont06_02 .g02  { width: 342px; height: 245px; position: relative; margin-left: 25px;}
-.cont06 .cont06_all .cont06_2 .cont06_02 .g02 div a strong { font-weight: 600; color: #066e14 }
+.cont06 .cont06_all .cont06_2 .cont06_02 .g02 div a strong { color: #066e14 }
 .cont06 .cont06_all .cont06_2 .cont06_02 .g02 div { width: 100%; position: absolute; bottom: 20px; right: 10px;}
 
 /* 아래 */
 .cont06 .cont06_all .cont06_2 .cont06_01   { width: 708px; height: 249px; position: relative; margin-left: 25px; margin-top: 25px;}
-.cont06 .cont06_all .cont06_2 .cont06_01 div a strong { font-weight: 600; color: #b6239d }
+.cont06 .cont06_all .cont06_2 .cont06_01 div a strong { color: #b6239d }
 .cont06 .cont06_all .cont06_2 .cont06_01 div { text-align: right;}
 .cont06 .cont06_all .cont06_2 .cont06_01 div { width: 100%; position: absolute; bottom: 20px; right: 10px;}
-.cont06 .cont06_all .cont06_2  .cont06_01  p { font-weight: 400; color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
+.cont06 .cont06_all .cont06_2  .cont06_01  p {color: white; font-size: 15px; padding: 2px 0; line-height: 1.5;}
 
 
 /* 이벤트 */
 .cont07 {
-    margin-bottom: 200px; margin-top: 200px; font-weight: 700;
+    margin-bottom: 200px; margin-top: 200px;
 }
 
 .cont07 h3 {
